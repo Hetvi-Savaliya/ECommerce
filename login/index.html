@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>login</title>
+
+            <title>Login</title>
+            <link href='https://fonts.googleapis.com/css?family=Lato:100' rel="stylesheet" href="../home/style.css">
+            <link rel="stylesheet" href="../header/header.html">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+            <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('navbar');
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                header.innerHTML = xhr.responseText;
+            } else {
+                console.error('Failed to load navigation bar:', xhr.status);
+            }
+        }
+    };
+    xhr.open('GET', '../header/header.html', true);
+    xhr.send();
+});
+
+            </script>
+              
+            <style>
+               .showcase{
+                  width: 100%;
+                  height: 700px;
+                  background: url(../login/bg.jpg) no-repeat;
+                  background-position: center;
+                  background-size: cover;
+                  position: relative;
+                  justify-content: center;
+                  align-items: center;
+                   
+              }
+              .showcase .overlay{
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  top:0;
+                  left: 0;
+                  background: linear-gradient(170deg, rgba(137, 26, 18, 0.7), rgb(0,0,0,0.8));
+                  
+              }
+              .content{
+                      margin-top: 160px;  
+                      margin-left: 520px;
+            
+              }
+               .box{
+                        margin-left: 130px;
+               }
+              .con1{
+                        margin: 80px 0px;
+              }
+              img{
+                        width: 75px;
+                        height:80px;
+            
+              }
+              .text{
+                        width: 350px;
+                        height: 50px;
+                        border-radius: 50px;
+                        border: none;
+                        background-color: rgb(256,256,256,0.15);
+                        margin-bottom: 10px;      
+              }
+              .text i{
+                        color: rgb(247, 240, 240,0.8);
+                        margin: 16px 16px 16px 23px;
+              }
+              .text input{
+                        width: 290px;
+                        height: 48px;
+                        border: none ;
+                        border-radius: 50px;
+                        color:white;
+                        background-color: transparent;
+                        outline: none;
+              }
+              input[type="text"]::placeholder {
+                         color: rgb(247, 240, 240,0.8); 
+              }
+              input[type="password"]::placeholder {
+                         color: rgb(247, 240, 240,0.8); 
+              }
+              .text:focus-within{
+                        background-color: rgb(247, 240, 240,0.3);
+              }
+              .btn button{
+                        width: 350px;
+                        height: 50px;
+                        margin-left: -15px;
+                        border-radius: 50px;
+                        border: none;
+                        outline: none;
+                        background-color: rgb(255, 105, 50);
+                        color: white;
+              }
+              .btn button:hover{
+                        background-color: rgb(252, 130, 86);
+                        box-shadow: 0 5px 25px 0 rgba(0,0,0,.3);
+              }
+              .btn button:focus-within{
+                outline: none;
+                border: none;
+              }
+              .link{
+                        width: 347px;
+                        font-size: 12px;
+                        font-weight: 700;
+                        display: flex;
+                        justify-content: space-between;
+              }
+              .link .link1 a{
+                        text-decoration: none;
+                        color: white;
+                        justify-content: space-between
+              }
+    .fff{
+       display: flex;
+       justify-content: space-between;
+
+   }
+   footer p{
+       color: white;
+       font-size: 15px;
+       font-weight: 400;
+       margin: 25px 30px 20px 0px;
+       padding-left: 500px
+
+   }
+
+       .footers{
+              display: flex;
+              font-size: 14px;
+              padding: 10px 10px 20px 90px;
+          }
+          .fff .footers a{
+              color: white;
+              text-decoration: none;
+              padding: 15px;
+   }   
+
+              
+  </style>
+              </head>
+              <body>
+                       
+                        <header id="navbar"> </header>
+                        <section class="showcase">
+                                    <div class="overlay"></div>
+                          <div class="navbar">
+                           <div class="content">
+                                      <div class="box">
+                                        <img src="../login/now-logo.webp">
+                                      </div>
+                              <div class="con1">        
+                                 <div class="text">
+                                    <i class="fa fa-user"></i>
+                                    <input type="text" placeholder="First Name...">
+                                 </div>
+                                 <div class="text">
+                                    <i class="fa fa-text-width"></i>
+                                    <input type="password" placeholder="password">
+                                 </div>     
+                            </div>
+
+                            <div class="btn">
+                                    <button>Get Started</button>
+                            </div> 
+                       <div class="link">
+                        <div class="link1"><a href="#">CREATE ACCOUNT</a></div>
+                        <div class="link1"><a href="#"> NEED HELP?</a></div>
+                       </div>
+                    </div>
+                       <footer class="fff">
+                        <div class="footers">
+                           <a href="#">CREATIVE TEAM</a>
+                           <a href="#">ABOUT US</a>
+                           <a href="#">BLOG</a>
+                           <a href="#">LICENCE</a>
+                        </div>
+                        <div>
+                           <p>© 2024, Designed by Invision. Coded by Creative Tim.</p>
+                        </div>
+                     </footer>
+
+                    
+                </div>
+</section>
+                     
+
+   </body>            
+</html>

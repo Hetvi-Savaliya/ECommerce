@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Ecoomerce page</title>
+            <link href='https://fonts.googleapis.com/css?family=Lato:100' rel="stylesheet" href="../home/style.css">
+            <link rel="stylesheet" href="../e-commerce/style.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+            <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('navbar');
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                header.innerHTML = xhr.responseText;
+            } else {
+                console.error('Failed to load navigation bar:', xhr.status);
+            }
+        }
+    };
+    xhr.open('GET', '../header/header.html', true);
+    xhr.send();
+});
+            </script>
+</head>
+<body>
+            <header id="navbar"></header>
+          <div class="img-1">
+            <a href="../e-commerce/c-men.html"><img src="./items/cloth.png"> </a> 
+            <a href="#"><img class="jm" src="items/jw.png"></a> 
+            <a href="#"><img class="hd" src="./items/home-decore.png"></a>
+          </div>
+
+          <div class="img-2">
+            <a href="#"><img class="wt" src="./items/watch.png"></a>
+            <a href="#"><img class="kc" src="./items/kitchen.png"></a>
+            <a href="#"><img class="sh" src="./items/shoes (1).png"></a>
+          </div>
+
+          <div class="img-3">
+            <a href="#"><img class="pn" src="./items/phone.png"></a>
+            <a href="#"><img class="sp" src="./items/sports.png"></a>
+          </div>
+</body>
+</html>

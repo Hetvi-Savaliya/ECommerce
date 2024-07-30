@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>profile</title>
+      
+            <link href='https://fonts.googleapis.com/css?family=Lato:100' rel="stylesheet" href="../profile/style.css">
+            <link rel="stylesheet" href="../profile/style.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+            <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('m-head');
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                header.innerHTML = xhr.responseText;
+            } else {
+                console.error('Failed to load navigation bar:', xhr.status);
+            }
+        }
+    };
+    xhr.open('GET', '../header/header.html', true);
+    xhr.send();
+});
+            </script>
+</head>
+<body>
+            <header id="m-head"></header>
+
+            <section class="showcase">
+                        <div class="overlay">
+            <div class="block">
+                        <div class="photo">
+                           <img src="../profile/dp1.jpeg">
+                        </div>
+                        <div class="name">
+                           <h2>Ryan Scheinder</h2>
+                           <p>photographer</p>
+                        </div> 
+              <div class="flex">
+                        <div class="fbox">
+                           <h1>15</h1>
+                           <p>posts</p>
+                        </div>
+                        <div class="fbox">
+                           <h1>26</h1>
+                           <p>Comments</p>
+                        </div>
+                        <div class="fbox">
+                           <h1>48</h1>
+                           <p>Bookmarks</p>
+                        </div>
+              </div>         
+             </div>
+            </div>
+</section>
+
+      <div class="block1">
+         <div class="b1">
+            <button>Follow</button>
+         </div>
+         <div class="b2">
+            <img src="../profile/Screenshot 2024-07-09 101324.png">
+         </div>
+      </div>
+
+      <div class="box2">
+         <h3>About me</h3>
+         <p>An artist of considerable range, Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. An artist of considerable range.</p>
+      </div>
+             
+      <div class="port">
+         <h3>My Portfolio</h3>
+      </div>
+      <div class="port1">
+             <div class="dic">
+               <img src="../profile/port (1).png">
+            </div>
+             <div class="dic">
+               <i class="fa fa-globe"></i>
+            </div>
+             <div class="dic">
+                <img src="../profile/port (2).png">
+            </div>
+      </div>
+
+      <div class="first">
+         <div class="f-container">
+            <div class="f-box">
+               <img class="f-img" src="../profile/ch (2).png">
+            </div>
+
+            <div class="f-box">
+                 <div class="f-box1">
+               <div class="box11">
+                  <div>
+                     <img class="img2" src="../profile/ch (3).png">
+                  </div>
+                 <div>
+                    <h4>Work With Any Team</h4>
+                    <p>Whether it’s for work or even the next family vacation, Trello helps your team</p>
+                 </div>
+               </div>
+
+               <div class="box11">
+                  <div>
+                     <img class="img1" src="../profile/ch (1).png">
+                  </div>
+                  <div>
+                     <h4>A Productivity Platform</h4>
+                     <p>Integrate the apps your team already uses directly into your workflow</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="map">
+       
+         <iframe id="map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58736.83414154867!2d72.46391947342325!3d23.05855018779245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9ca1402b2107%3A0xc6b7cfd374cb4bcb!2sThaltej%2C%20Ahmedabad%2C%20Gujarat%2C%20India!5e0!3m2!1sen!2ssg!4v1720412731250!5m2!1sen!2ssg"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <div class="map-overlay"></div>
+        </div>
+         
+        <footer class="fff">
+         <div class="footers">
+            <a href="#">CREATIVE TEAM</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">BLOG</a>
+            <a href="#">LICENCE</a>
+         </div>
+         <div>
+            <p>© 2024, Designed by Invision. Coded by Creative Tim.</p>
+         </div>
+      </footer>
+   
+        <div class="contact">
+              <h3>Contact Us</h3>
+      
+       <div class="block2">
+         <div class="box12">
+            <div>
+               <i class="fa fa-mobile"></i></div>
+               <div class="box1">
+                  <h4>Give us a ring</h4>
+                  <p>Michael Jordan<br>
+                    +40 762 321 762<br>
+                    Mon - Fri, 8:00-22:00</p>
+               </div>
+         </div>
+
+         <div class="box12">
+            <div>
+              <i class="fa fa-globe"></i></div>
+               <div class="box1">
+                  <h4>Find us at the office</h4>
+                  <p>Bld Mihail Kogalniceanu, nr. 8,
+                  7652 Bucharest,
+                  Romania</p>
+               </div>
+         </div>
+      </div> 
+      
+      <div class="part">  
+         <div class="part1">
+           <div class="n">
+              Full name
+           </div>  
+       <div class="tab">
+         <i class="fa fa-user"></i>
+        <input type="text" class="no-border" placeholder="First Name..."> 
+       </div>
+     </div>
+
+     <div class="part1">
+       <div class="n">
+          Email adderess
+       </div>  
+       <div class="tab">
+          <i class="fa fa-user"></i>
+          <input type="text" class="no-border" placeholder="Email here..."> 
+       </div>
+       </div>
+     </div>  
+
+      <div class="final">
+         <div class="f1">
+            <input type="checkbox">I'm not a robot
+         </div>
+         <div class="btn">
+            <button type="submit">Send Message </button>
+         </div>
+      </div>
+
+   </div>  
+
+   
+            <script>
+               const mHead = document.querySelector('.m-head');
+   const logo = document.querySelector('.logo');
+   window.addEventListener('scroll',function(){
+     if(window.scrollY > 400){
+       mHead.classList.add('slidedown');
+       logo.style.color = '#000';
+   } else{
+       mHead.classList.remove('slidedown');
+       logo.style.color = '';
+   }
+   })
+            </script>  
+</body>
+</html>

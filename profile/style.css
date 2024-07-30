@@ -1,0 +1,389 @@
+*{
+            margin: 0;
+            padding: 0; 
+            box-sizing: border-box;
+            color: #2c2c2c;
+}
+.showcase{
+            width: 100%;
+            height: 490px;
+            background: url(../profile/background.avif) no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: -1;
+        }
+        .showcase .overlay{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left: 0;
+            background: linear-gradient( rgba(139, 24, 6, 0.8), rgb(0,0,0,0.4));
+        }
+img{
+            width: 110px;
+            border-radius: 100px;
+}   
+.name{
+            color: white;
+            margin-top: 65px;
+}
+.name p{
+            color: rgb(207, 197, 197);
+            font-size: 21px;
+            font-weight: 600;
+            margin-top: -15px;
+}
+p{
+            font-size: 22px;
+            color: white;
+            font-weight: 200;
+}
+h5{
+            padding-bottom: 20px;
+}
+.block{
+            padding-top: 75px;
+            text-align: center;
+            color: white;
+            margin-left: -20px;
+}
+.photo{
+            text-align: center;
+           
+}
+.flex{
+       display: flex;
+       justify-content: center;
+}
+.fbox{
+       display: block;
+       padding: 10px 30px;
+       color: white;
+}
+.block1{
+       display: flex;
+       justify-content: center;
+       margin-top: -30px;
+       margin-left: -7px;       
+}
+.b1 button{
+       width: 160px;
+       height:55px;
+       background-color: rgb(249, 107, 55);
+       color: white;
+       border-radius: 50px;
+       border: none;
+}
+.b2 img{
+       width: 120px;
+}
+.box2{
+       width: 55%;
+       text-align: center;
+       margin-left:23% ;
+       margin-top: 80px;
+       margin-bottom: 20px;
+}
+.box2 h3{
+       color: #2c2c2c;
+       font-weight: 550;
+       font-weight: 700;
+       font-size: 30px;
+}
+.box2 p{
+       margin-top: 3%;
+               color: #cccbcb;
+               font-weight:100;
+               font-size: 23px;
+}
+.port h3{
+       color: #2c2c2c;
+       font-weight: 550;
+       font-weight: 700;
+       font-size: 25px;
+       text-align: center;
+       
+       margin-top: 150px;
+}
+.port1{
+       display: flex;
+       justify-content: center;
+    
+}
+.dic{
+       width: 90px;
+       height: 90px;
+       background-color: rgb(245, 244, 244);
+       border-radius: 100px;
+       margin-right: 20px;
+       margin-top: 20px;
+       
+       box-shadow: 0 0px 25px 0 rgba(0,0,0,.2);
+}
+.dic i{
+       font-size: 28px;
+       color: rgb(85, 85, 85);
+       padding: 32px;
+}
+.dic img{
+       width: 30px;
+       height: 25px;
+       border-radius: 0px;
+       margin: 35px 30px;
+}
+.dic:hover{
+       box-shadow: 0 0px 25px 0 rgba(246, 76, 3, 0.736);
+}
+.first{
+       width: inherit;
+       padding-top: 50px;
+       padding-bottom: 25px;
+   }
+   .f-container{
+         display: flex;
+         width: auto;
+         padding-bottom: 15px;      
+   }
+   .f-container1{
+       width: auto;
+       display: flex;
+       width: auto;
+       padding-left: 135px;
+   }
+   
+   .f-box{
+       width: 100%;
+       padding: 0 30px;
+   }
+   .fs-box{
+       width: inherit;
+       margin:auto; 
+   }
+   .f-box1{
+          padding-top: 20px;     
+   }
+   .f-box2{
+       padding-top: 20px;
+       padding: 0px 60px 0px 80px;
+   }
+   .f-img{
+       width: 490px;
+       height: 450px; 
+       margin-left: 160px;
+       border-radius: 7px;
+       box-shadow: 0 9px 30px -6px #2c2c2c;
+   }
+   .f-img1{
+       width: 440px;
+       height: 500px;
+       border-radius: 7px;
+       box-shadow: 0 9px 30px -6px #2c2c2c;
+   }
+   .img1{
+       width: 35px;
+       height: 45px;
+       margin-right: 30px;
+   }
+   .img2{
+       width: 30px;
+       height: 55px;
+       margin-right: 30px;
+   }
+   .box11 h4{
+       font-size: 1.5em;
+       padding: 10px 5px;
+   }
+   .box11 p{
+       font-size: 20px;
+       color: #cccbcb;
+       margin-bottom: 50px;
+   }
+   .box11{
+       display: flex;
+       width: 390px;
+       margin-left: 130px;
+       margin-top: 50px;
+   }
+   .map{
+       overflow: hidden;
+       position: relative;
+       margin-top: 150px;
+       z-index: -1;
+   }
+   .map-overlay{
+       position: absolute;
+       background-color: rgb(0, 0, 0, 0.5);
+       height: 650px;
+       width: 100%;
+       top: 0;
+       pointer-events: none;
+
+   }
+   .map iframe{
+       width: 100%;
+       height: 650px;
+       border: none;
+       outline: none;
+   }
+   .map iframe:focus{
+          outline: none;
+   }
+   .contact{
+       width: 620px;
+       height: 460px;
+       border-radius: 5px;
+       background-color:white;
+       text-align: center;
+       padding-top: 13px;
+       margin-top: -640px;
+       margin-left: 180px;
+       z-index: 0;
+   }
+   .block2{
+       display: flex;
+   }
+   .box12{
+       display: flex;
+       margin: 50px 50px 0px 35px;
+   }
+   .box12 i{
+       color: rgb(249, 104, 52);
+       font-size: 30px;
+   }
+   .box1{
+       width: 160px;
+       text-align: left;
+       margin-left: 35px;
+   }
+   .box1 p{
+       color: #cdcdcc;
+       font-size: 18px;
+   }
+   .box1 h4{
+       font-size: 20px;
+       font-weight: 350;
+   }
+   .n{
+       font-size: 18px;
+       text-align: left;
+       color: rgb(68, 68, 68);
+   }
+   .part{
+       display: flex;
+       
+   }
+   .part1{
+       margin-left: 30px;
+   }
+   .tab{
+       display: block;
+       width: 270px;
+       height: 43px;
+       border: solid;
+       border-color: #e0e0e0;
+       border-radius: 50px;
+       font-size: 15px;
+       margin: 10px 0px;
+       padding-left: 15px; 
+   }
+   .tab i{
+       color: #8b8a8a;
+   }
+   .tab input{
+       color: black;
+       width: 200px;
+       height: 38px;
+       border-radius: 50px;
+       border: none;
+       padding-left: 15px;
+   }
+   .no-border{
+       border: none;
+   }
+   .no-border:focus-within{
+       border: none;
+       outline: none;
+   }
+   .final{
+       display: flex;
+       justify-content: space-between;
+       margin-top: 10px;
+   }
+   .f1{
+       font-size: 18px;
+   }
+    input[type="checkbox"] {
+       width: 30px;
+       height: 30px;
+       border-radius: 3px;
+       border-color: rgb(195, 194, 194);
+       -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-left: 30px;
+   }
+   input[type="checkbox"]:checked{
+       background-color: white;
+       color: rgb(195, 194, 194);
+       border-color: #ccc;
+       position: relative;
+   }
+   input[type="checkbox"]:checked::before {
+       content: '✔';
+       color: rgb(195, 194, 194);
+       position: absolute;
+       top: 0;
+       left: 3px;
+       font-size: 15px;
+   }
+   .btn button{
+       width: 150px;
+       height: 40px;
+       border-radius: 50px;
+       border: none;
+       background-color: rgb(250, 93, 36);
+       color: white;
+       margin-right: 10px;
+   }
+   button{
+       padding-bottom: 5px;
+   }
+  .btn button:focus-within{
+       outline: none;
+       border: none;
+   }
+   .fff{
+       display: flex;
+       justify-content: space-between;
+       
+   }
+   footer p{
+       color: black;
+       font-size: 15px;
+       font-weight: 400;
+       margin: 25px 30px 20px 0px;
+
+   }
+
+       .footers{
+              display: flex;
+              font-size: 14px;
+              padding: 10px 10px 20px 90px;
+          }
+          .fff .footers a{
+              color: #5f5d5d;
+              text-decoration: none;
+              padding: 15px;
+   }   
+   
+

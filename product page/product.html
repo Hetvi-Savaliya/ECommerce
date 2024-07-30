@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>product</title>
+
+            <link href='https://fonts.googleapis.com/css?family=Lato:100' rel="stylesheet" href="../home/style.css">
+            <link rel="stylesheet" href="../product page/style.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+            <script>
+                         document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('navbar');
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                header.innerHTML = xhr.responseText;
+            } else {
+                console.error('Failed to load navigation bar:', xhr.status);
+            }
+        }
+    };
+    xhr.open('GET', '../header/header.html', true);
+    xhr.send();
+});
+            </script>
+              
+</head>
+<body>
+          <div id="navbar"></div>    
+          
+          <div class="flex">
+            <div class="fbox">
+                        <img src="../e-commerce/items/polo.png">
+            </div>
+            <div class="fbox">
+                        <h1>Polo Ralph lauren</h1>
+                        <p>Impeccably tailored in Italy from<br>lightweight navy wool.</p>
+                        <i class="fa fa-usd"> 200</i>
+
+                        <h2>Description</h2>
+                        <p class="per">white cotton embroidered logo at the chest<br>stripe trim classic collar front button fastening<br> short sleeves</p>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="fbox">
+                        <h3>Composition</h3>
+                        <p class="pr">Cotton 100%</p>
+                        <br>
+                        <h3>Washing instructions</h3>
+                        <p class="pr">Machine Wash</p>
+                        
+                        <h3>Wearing</h3>
+                        <p class="pr">The model is 1.87 m wearing size L<br>
+                        
+                        The model is also styled with: Maison Margiela<br>Replica low-top sneakers</p>
+                        <h3>Product IDs</h3>
+                        <p class="pr">FARFETCH ID: 16962296<br>
+                        Brand style ID: 710842621</p>
+            </div>
+
+            <div class="fbox">
+                        <h3>measurements</h3>
+                        <p class="pr">Product measurements for size </p>
+                  <div class="f-box1">
+                        <button>XS</button>
+                        <button>M</button>
+                        <button>L</button>
+                        <button>XXL</button>
+                  </div>
+
+                      <div class="f-box">
+                        <div>
+                                    Length<br>
+                                    Chest<br>
+                                    Sleeve length<br>
+                                    Shoulder Width
+                        </div>
+                        <div>
+                                    82 cm<br>140 cm<br>25 cm<br>50 cm
+                        </div>
+                      </div>
+                       <div class="p1">
+                      <p>Still need help? <a href="#">Try our size guide</a></p>
+            </div>
+            </div>
+          </div>
+           
+              <div class="btn">
+                       <a href="../e-commerce/m-collection.html"><button>Show Popular product</button></a>
+              </div>
+
+              <footer class="fff">
+                        <div class="footers">
+                           <a href="#">CREATIVE TEAM</a>
+                           <a href="#">ABOUT US</a>
+                           <a href="#">BLOG</a>
+                           <a href="#">LICENCE</a>
+                        </div>
+                        <div>
+                          <p>© 2024, Designed by Invision. Coded by Creative Tim.</p>
+                       </div>
+                     </footer>
+</body>
+</html>

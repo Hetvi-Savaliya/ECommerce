@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    color: #2c2c2c;
+}
+.navbar{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.m-head{
+width: 100%;
+height: 64px;
+position: fixed;
+top: 0;
+left: 0;
+background: transparent;
+z-index: 9999;
+}
+.m-head.slidedown{
+top: 0;
+left: 0;
+width: 100%;
+background: white;
+box-shadow: 0 10px 25px 0 rgba(0,0,0,.3);
+animation: slidedown .4s forwards;
+
+}
+
+.m-head .main-menu{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;  
+}
+.m-head .main-menu .logo{
+font-size: 15px;
+font-weight: 100;
+color: #fff;
+}
+.m-head .main-menu .nav-menu{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+.m-head .main-menu .nav-menu .nav-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  padding-right: 60px;
+ 
+}
+.m-head .main-menu .nav-menu .nav-list .nav-list-item{
+list-style: none;
+margin: 0px 3px;
+font-size: 12px;
+}
+.m-head .main-menu .nav-menu .nav-list .nav-list-item i{
+color: #9a9a9a;
+}
+.m-head .main-menu .nav-menu .nav-list .nav-list-item .nav-link {
+display: inline-block;
+text-decoration: none;
+transition: all .1s ease-in-out;
+height: 45px;
+padding-top: 13px;
+color: #cac9c9;
+}
+.pop-up{
+display: none;
+border-radius: 3px;
+box-shadow: 0 10px 25px 0 rgba(0,0,0,.3);
+width: 190px;
+height:60px;
+font-weight: 400;
+padding: 9px 3px 9px 8px;
+font-size: 14px;
+background-color: #fff;
+}
+.logo:hover .pop-up{
+     display: block;
+     position: absolute;
+     background:#fff;
+}
+.sub-menu{
+display: none;
+border-radius: 2px;
+box-shadow: 0 10px 25px 0 rgba(0,0,0,.3);
+
+}
+.sub-menu ul li{
+width: auto;
+height: auto;
+list-style: none;
+text-align: center;
+width: 180px;
+padding: 8px 0px;
+}
+.sub-menu ul li a{
+color: #9a9a9a;
+text-decoration: none;
+font-size: 15px;
+}
+
+.sub-menu ul li:hover{
+width: 100%;
+background-color: rgba(151, 150, 150, 0.1);
+}
+.m-head .main-menu .nav-menu .nav-list .nav-list-item .nav-link:hover {
+background-color: rgb(256,256,256,0.1);
+height: 45px;
+border-radius: 2px;
+transition: transform 0.3s ease; 
+opacity: 0.2px;
+}
+
+.nav-menu .nav-list .nav-list-item.nav-list-item:focus-within .sub-menu{
+display: block;
+position: absolute;   
+background:#fff;
+margin-top: 15px;
+margin-left: -15px;
+}
+.nav-list-item button{
+width: 100px;
+height: 45px;
+top: 0;
+border-radius: 3px;
+background-color: rgb(249, 117, 56);
+border: none;
+color: #fff;
+}
+
+.nav-list-item button:hover{
+border-radius: 2px;
+background-color: rgba(251, 142, 91, 0.9);
+transition: transform 0.3s ease; 
+opacity: 0.2px; 
+}
